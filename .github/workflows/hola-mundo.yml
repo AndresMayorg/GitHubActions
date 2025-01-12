@@ -10,5 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Instalar JDK
+        run: sudo apt-get install openjdk-11-jdk -y
+
+      - name: Compilar Java
+        run: javac Main.java
+
       - name: Correr script
-        run: java Main.java
+        run: java Main
