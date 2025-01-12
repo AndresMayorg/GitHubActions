@@ -1,0 +1,14 @@
+name: Aprendiendo GitHub Actions
+run-name: Estoy aprendiendo GitHub Actions
+on: [push]
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest  # Asegúrate de que esté correctamente indentado
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Correr script
+        run: java Main.java
