@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: aprendiendo-github-actions
 
       - name: Instalar JDK
         run: sudo apt-get install openjdk-11-jdk -y
